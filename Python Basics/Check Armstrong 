@@ -1,0 +1,12 @@
+n=int(input())
+l=len(str(n))
+sum=0
+num=n
+while(n>0):
+    a=n%10
+    sum=sum+a**l
+    n=n//10
+if sum==num:
+    print('true')
+else:
+    print('false')

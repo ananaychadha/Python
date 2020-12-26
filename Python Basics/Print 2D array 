@@ -1,0 +1,19 @@
+def print2d(a,b,c):
+    k=b
+    for i in range(b):
+        for l in range(k-1,-1,-1):
+            for j in range(c):
+                print(a[i][j],end=' ')
+            print()
+        k=k-1
+
+a=[]
+li=input().strip().split()
+b=int(li[0])
+c=int(li[1])
+
+for i in range(b):
+    o=[int(elem) for elem in list(input().strip().split())]
+    a.append(o)
+    
+print2d(a,b,c)
